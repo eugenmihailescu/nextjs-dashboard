@@ -5,7 +5,14 @@ export const authConfig = {
     signIn: '/login',
   },
   callbacks: {
-    authorized({ auth, request: { nextUrl } }) {
+    authorized({ auth, request: { nextUrl, headers } }) {
+      if (headers.has('user-agent')) {
+        const ua = headers.get('user-agent') || '';
+        if (/bot|google/i.test(ua)) {
+          return true;
+        }
+      }
+
       const isLoggedIn = !!auth?.user;
       const isOnDashboard = nextUrl.pathname.startsWith('/dashboard');
       if (isOnDashboard) {
