@@ -1,3 +1,4 @@
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { inter } from '@/app/ui/fonts';
 import '@/app/ui/global.css';
 import { Metadata } from 'next';
