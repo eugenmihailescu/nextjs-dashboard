@@ -1,5 +1,22 @@
 {
-  "private": true,
+  "name": "nextjs-dashboard",
+  "version": "0.1.0",
+  "description": "Next.js demo dashboard",
+  "private": false,
+  "license": "ISC",
+  "author": {
+    "name": "Eugen Mihailescu",
+    "email": "eugen.mihailescu@protonmail.com",
+    "url": "https://www.linkedin.com/in/eugenmihailescu"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eugenmihailescu/nextjs-dashboard"
+  },
+  "bugs": {
+    "url": "https://github.com/eugenmihailescu/nextjs-dashboard/issues",
+    "email": "eugen.mihailescu@protonmail.com"
+  },
   "scripts": {
     "build": "next build",
     "dev": "next dev",
